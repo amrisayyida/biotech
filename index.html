@@ -1,421 +1,2042 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meridian Oncology — Pioneering Cancer Therapeutics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --white: #ffffff;
+      --off-white: #f8f9fb;
+      --frost: #f0f3f7;
+      --mist: #e4e9f0;
+      --silver: #c5cdd8;
+      --slate: #8492a6;
+      --charcoal: #3c4858;
+      --ink: #1b2432;
+      --deep: #0d1117;
+      --teal: #0e9aa7;
+      --teal-soft: #d0f0f2;
+      --teal-mid: #17b5c4;
+      --teal-dark: #0a7a86;
+      --teal-muted: #e6f7f8;
+      --coral: #f76c6c;
+      --violet: #6c5ce7;
+      --violet-soft: #ede9fd;
+      --serif: 'DM Serif Display', Georgia, serif;
+      --sans: 'Manrope', system-ui, sans-serif;
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+      --radius: 12px;
+      --radius-lg: 20px;
+    }
 
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "primary-container": "#002e5d",
-                    "on-secondary": "#ffffff",
-                    "secondary": "#466366",
-                    "background": "#f8f9fa",
-                    "error-container": "#ffdad6",
-                    "tertiary-container": "#003535",
-                    "surface-container-low": "#f3f4f5",
-                    "tertiary": "#001e1e",
-                    "surface": "#f8f9fa",
-                    "on-secondary-fixed-variant": "#2f4b4e",
-                    "on-tertiary-fixed": "#002020",
-                    "on-tertiary-fixed-variant": "#004f4f",
-                    "surface-variant": "#e1e3e4",
-                    "secondary-fixed": "#c9e8ec",
-                    "tertiary-fixed-dim": "#76d6d5",
-                    "on-primary-fixed": "#001b3c",
-                    "inverse-on-surface": "#f0f1f2",
-                    "primary-fixed": "#d5e3ff",
-                    "outline": "#747781",
-                    "inverse-primary": "#a7c8ff",
-                    "secondary-container": "#c6e5e9",
-                    "surface-bright": "#f8f9fa",
-                    "tertiary-fixed": "#93f2f2",
-                    "on-primary-container": "#7497d0",
-                    "surface-container-lowest": "#ffffff",
-                    "on-tertiary": "#ffffff",
-                    "on-surface": "#191c1d",
-                    "inverse-surface": "#2e3132",
-                    "surface-container-high": "#e7e8e9",
-                    "on-secondary-fixed": "#002022",
-                    "primary-fixed-dim": "#a7c8ff",
-                    "primary": "#001a38",
-                    "surface-container": "#edeeef",
-                    "surface-dim": "#d9dadb",
-                    "on-surface-variant": "#43474f",
-                    "error": "#ba1a1a",
-                    "on-tertiary-container": "#41a5a4",
-                    "on-primary": "#ffffff",
-                    "secondary-fixed-dim": "#adcccf",
-                    "surface-container-highest": "#e1e3e4",
-                    "on-error-container": "#93000a",
-                    "outline-variant": "#c4c6d1",
-                    "on-error": "#ffffff",
-                    "on-background": "#191c1d",
-                    "surface-tint": "#3a5f94",
-                    "on-secondary-container": "#4b686b",
-                    "on-primary-fixed-variant": "#1f477b"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.5rem",
-                    "xl": "1rem",
-                    "full": "9999px"
-            },
-            "fontFamily": {
-                    "headline": ["Space Grotesk", "sans-serif"],
-                    "body": ["Manrope", "sans-serif"],
-                    "label": ["Manrope", "sans-serif"]
-            }
-          },
-        },
-      }
-    </script>
-<style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        vertical-align: middle;
-      }
-      body { font-family: 'Manrope', sans-serif; }
-      h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; }
-      .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-      .tech-border { border-left: 4px solid #7497d0; }
-    </style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--white);
+      color: var(--charcoal);
+      line-height: 1.7;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 4vw, 3rem);
+    }
+
+    .container-wide {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 4vw, 3rem);
+    }
+
+    /* ── SECTION COMMONS ── */
+    .section-label {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.75rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--teal-muted);
+      padding: 0.35rem 1rem;
+      border-radius: 100px;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4.5vw, 3.4rem);
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    .section-title em {
+      font-style: italic;
+      color: var(--teal-dark);
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--slate);
+      max-width: 560px;
+      line-height: 1.75;
+      font-weight: 400;
+    }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.8rem;
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.35s var(--ease);
+      position: relative;
+    }
+
+    .btn svg {
+      width: 15px;
+      height: 15px;
+      transition: transform 0.3s var(--ease);
+    }
+
+    .btn:hover svg { transform: translateX(3px); }
+
+    .btn-primary {
+      background: var(--teal);
+      color: var(--white);
+      box-shadow: 0 4px 16px rgba(14, 154, 167, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--teal-dark);
+      box-shadow: 0 6px 24px rgba(14, 154, 167, 0.35);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--ink);
+      border: 1.5px solid var(--mist);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--teal);
+      color: var(--teal-dark);
+      background: var(--teal-muted);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--teal);
+      padding: 0.5rem 0;
+      font-weight: 600;
+    }
+
+    .btn-ghost:hover { color: var(--teal-dark); }
+
+    /* ── REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+    }
+    .reveal.vis { opacity: 1; transform: translateY(0); }
+    .d1 { transition-delay: 0.08s; }
+    .d2 { transition-delay: 0.16s; }
+    .d3 { transition-delay: 0.24s; }
+    .d4 { transition-delay: 0.32s; }
+    .d5 { transition-delay: 0.4s; }
+
+    /* ── NAVIGATION ── */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 1rem 0;
+      transition: all 0.4s var(--ease);
+    }
+
+    .nav.scrolled {
+      background: rgba(255,255,255,0.88);
+      backdrop-filter: blur(24px) saturate(1.4);
+      -webkit-backdrop-filter: blur(24px) saturate(1.4);
+      padding: 0.6rem 0;
+      box-shadow: 0 1px 0 var(--mist);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 4vw, 3rem);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      color: var(--ink);
+    }
+
+    .logo-icon {
+      width: 34px;
+      height: 34px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--charcoal);
+      transition: color 0.25s;
+      letter-spacing: 0.01em;
+    }
+
+    .nav-links a:hover { color: var(--teal); }
+
+    .nav-links .nav-cta {
+      background: var(--teal);
+      color: var(--white);
+      padding: 0.5rem 1.4rem;
+      border-radius: 100px;
+      font-weight: 600;
+      transition: all 0.3s var(--ease);
+    }
+
+    .nav-links .nav-cta:hover {
+      background: var(--teal-dark);
+      transform: translateY(-1px);
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .menu-toggle span {
+      width: 22px;
+      height: 1.5px;
+      background: var(--ink);
+      transition: all 0.3s;
+    }
+
+    .mobile-menu {
+      position: fixed; inset: 0;
+      z-index: 999;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+
+    .mobile-menu.active { opacity: 1; pointer-events: all; }
+
+    .mobile-menu a {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      color: var(--ink);
+      transition: color 0.2s;
+    }
+
+    .mobile-menu a:hover { color: var(--teal); }
+
+    .mobile-menu-close {
+      position: absolute;
+      top: 1.2rem; right: 1.2rem;
+      background: none; border: none;
+      font-size: 1.6rem;
+      color: var(--charcoal);
+      cursor: pointer;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: var(--white);
+    }
+
+    .hero-grid-bg {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--frost) 1px, transparent 1px),
+        linear-gradient(90deg, var(--frost) 1px, transparent 1px);
+      background-size: 60px 60px;
+      opacity: 0.6;
+      mask-image: radial-gradient(ellipse 70% 60% at 50% 45%, black 20%, transparent 70%);
+      -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 45%, black 20%, transparent 70%);
+    }
+
+    .hero-glow {
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    .hero-glow-1 {
+      top: -15%;
+      right: 5%;
+      background: var(--teal-soft);
+    }
+
+    .hero-glow-2 {
+      bottom: -20%;
+      left: -10%;
+      background: var(--violet-soft);
+      opacity: 0.2;
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 10rem clamp(1.25rem, 4vw, 3rem) 5rem;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--teal-muted);
+      color: var(--teal-dark);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.45rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.7s var(--ease) 0.2s forwards;
+    }
+
+    .hero-badge-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--teal);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.8rem, 5.5vw, 4.6rem);
+      font-weight: 400;
+      line-height: 1.08;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s var(--ease) 0.35s forwards;
+    }
+
+    .hero h1 .teal { color: var(--teal); }
+
+    .hero-desc {
+      font-size: 1.08rem;
+      font-weight: 400;
+      color: var(--slate);
+      max-width: 500px;
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s var(--ease) 0.5s forwards;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.8s var(--ease) 0.65s forwards;
+    }
+
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      animation: fadeIn 1.2s var(--ease) 0.5s forwards;
+    }
+
+    .hero-image-stack {
+      position: relative;
+      width: clamp(320px, 30vw, 480px);
+      height: clamp(380px, 34vw, 540px);
+    }
+
+    .hero-img-main {
+      position: absolute;
+      top: 0; right: 0;
+      width: 85%;
+      height: 75%;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--mist);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+      z-index: 2;
+    }
+
+    .hero-img-main img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-img-secondary {
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 55%;
+      height: 45%;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--mist);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.06);
+      z-index: 3;
+    }
+
+    .hero-img-secondary img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-float-badge {
+      position: absolute;
+      z-index: 4;
+      top: 68%;
+      right: -8%;
+      background: var(--white);
+      border: 1px solid var(--mist);
+      border-radius: var(--radius);
+      padding: 0.9rem 1.3rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.07);
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .hero-float-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--teal-muted);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--teal);
+    }
+
+    .hero-float-icon svg { width: 18px; height: 18px; }
+
+    .hero-float-text .num {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      color: var(--teal);
+      line-height: 1;
+    }
+
+    .hero-float-text .label {
+      font-size: 0.58rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--slate);
+    }
+
+    .hero-img-accent {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 1.5px dashed var(--teal-soft);
+      z-index: 1;
+      animation: spinSlow 20s linear infinite;
+    }
+
+    .hero-img-dots {
+      position: absolute;
+      bottom: 12%;
+      right: 42%;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(4, 6px);
+      gap: 6px;
+    }
+
+    .hero-img-dots span {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--teal);
+      opacity: 0.15;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      opacity: 0;
+      animation: fadeIn 0.8s var(--ease) 1.5s forwards;
+    }
+
+    .hero-scroll span {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--silver);
+    }
+
+    .hero-scroll-bar {
+      width: 1px;
+      height: 32px;
+      background: linear-gradient(to bottom, var(--teal), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+
+    /* ── METRICS STRIP ── */
+    .metrics {
+      position: relative;
+      z-index: 2;
+      background: var(--off-white);
+      border-top: 1px solid var(--mist);
+      border-bottom: 1px solid var(--mist);
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .metric {
+      padding: 2.2rem 1.5rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .metric:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 25%; height: 50%;
+      width: 1px;
+      background: var(--mist);
+    }
+
+    .metric-num {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      color: var(--teal);
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+
+    .metric-text {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--slate);
+    }
+
+    /* ── ABOUT ── */
+    .about {
+      padding: clamp(5rem, 10vw, 9rem) 0;
+      background: var(--white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 6vw, 6rem);
+      align-items: center;
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      color: var(--charcoal);
+      margin-bottom: 1.25rem;
+      line-height: 1.85;
+    }
+
+    .about-text p:first-of-type {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    .about-visual {
+      position: relative;
+      height: 480px;
+    }
+
+    .about-card {
+      position: absolute;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--mist);
+      background: var(--frost);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    }
+
+    .about-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-card-inner {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      display: flex;
+      align-items: flex-end;
+      padding: 1.5rem;
+      background: linear-gradient(to top, rgba(11,20,50,0.5), transparent);
+      z-index: 2;
+    }
+
+    .about-card:nth-child(1) {
+      width: 62%;
+      height: 62%;
+      top: 0; right: 0;
+      z-index: 2;
+    }
+
+    .about-card:nth-child(2) {
+      width: 55%;
+      height: 48%;
+      bottom: 0; left: 0;
+      z-index: 1;
+    }
+
+    .about-card-tag {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+      padding: 0.35rem 0.8rem;
+      border-radius: 100px;
+    }
+
+    .about-float-stat {
+      position: absolute;
+      z-index: 3;
+      top: 55%;
+      left: 42%;
+      background: var(--white);
+      border: 1px solid var(--mist);
+      border-radius: var(--radius);
+      padding: 1rem 1.5rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+
+    .about-float-stat .num {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      color: var(--teal);
+      line-height: 1;
+    }
+
+    .about-float-stat .label {
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--slate);
+      margin-top: 0.2rem;
+    }
+
+    /* ── PARALLAX DIVIDERS ── */
+    .parallax-section {
+      position: relative;
+      padding: clamp(5rem, 10vw, 8rem) 0;
+      overflow: hidden;
+      background: var(--ink);
+      min-height: 360px;
+    }
+
+    .parallax-bg {
+      position: absolute;
+      inset: -30%;
+      will-change: transform;
+    }
+
+    .parallax-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.35;
+    }
+
+    .parallax-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(11, 20, 50, 0.6);
+      z-index: 1;
+    }
+
+    .parallax-inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .parallax-inner blockquote {
+      font-family: var(--serif);
+      font-size: clamp(1.4rem, 2.8vw, 2rem);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--white);
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
+    }
+
+    .parallax-inner cite {
+      font-family: var(--sans);
+      font-style: normal;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+
+    /* ── PIPELINE ── */
+    .pipeline {
+      padding: clamp(5rem, 10vw, 9rem) 0;
+      background: var(--white);
+    }
+
+    .pipeline-header {
+      max-width: 560px;
+      margin-bottom: 3.5rem;
+    }
+
+    .pipeline-table-head {
+      display: grid;
+      grid-template-columns: 2.2fr 1.2fr repeat(4, 1fr);
+      padding: 0 1.5rem 1rem;
+      border-bottom: 2px solid var(--frost);
+      margin-bottom: 0.5rem;
+    }
+
+    .pipeline-table-head span {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--slate);
+    }
+
+    .pipeline-row {
+      display: grid;
+      grid-template-columns: 2.2fr 1.2fr repeat(4, 1fr);
+      padding: 1.3rem 1.5rem;
+      border-radius: var(--radius);
+      transition: all 0.3s var(--ease);
+      align-items: center;
+      border: 1px solid transparent;
+    }
+
+    .pipeline-row:hover {
+      background: var(--off-white);
+      border-color: var(--mist);
+    }
+
+    .pipeline-drug {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      color: var(--ink);
+    }
+
+    .pipeline-drug small {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: var(--slate);
+      margin-top: 0.15rem;
+    }
+
+    .pipeline-indication {
+      font-size: 0.85rem;
+      color: var(--charcoal);
+      font-weight: 500;
+    }
+
+    .pipeline-bar {
+      height: 4px;
+      background: var(--frost);
+      border-radius: 4px;
+      margin: 0 0.4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pipeline-bar-fill {
+      position: absolute;
+      left: 0; top: 0;
+      height: 100%;
+      border-radius: 4px;
+      transition: width 1.2s var(--ease);
+    }
+
+    .pipeline-bar-fill.active {
+      background: linear-gradient(90deg, var(--teal), var(--teal-mid));
+    }
+
+    /* ── SCIENCE ── */
+    .science {
+      padding: clamp(5rem, 10vw, 9rem) 0;
+      background: var(--off-white);
+    }
+
+    .science-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .science-header .section-label { margin: 0 auto 0.75rem; }
+
+    .science-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .science-card {
+      background: var(--white);
+      border: 1px solid var(--mist);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      transition: all 0.4s var(--ease);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .science-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--teal), var(--teal-mid));
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .science-card:hover {
+      border-color: transparent;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+      transform: translateY(-4px);
+    }
+
+    .science-card:hover::after { opacity: 1; }
+
+    .science-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--teal-muted);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: var(--teal);
+    }
+
+    .science-icon svg { width: 24px; height: 24px; }
+
+    .science-card h3 {
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+      font-weight: 400;
+    }
+
+    .science-card p {
+      font-size: 0.9rem;
+      color: var(--slate);
+      line-height: 1.75;
+    }
+
+    /* ── MANAGEMENT ── */
+    .management {
+      padding: clamp(5rem, 10vw, 9rem) 0;
+      background: var(--white);
+    }
+
+    .management-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 3.5rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .management-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .team-card {
+      border: 1px solid var(--mist);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: all 0.4s var(--ease);
+      background: var(--white);
+    }
+
+    .team-card:hover {
+      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+      transform: translateY(-3px);
+      border-color: transparent;
+    }
+
+    .team-card-photo {
+      aspect-ratio: 1;
+      background: linear-gradient(135deg, var(--teal-muted), var(--frost));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .team-card-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+    }
+
+    .team-card-photo::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.04), transparent 40%);
+      z-index: 1;
+    }
+
+    .team-card-initials {
+      font-family: var(--serif);
+      font-size: 2.4rem;
+      color: var(--teal);
+      opacity: 0.35;
+      letter-spacing: 0.08em;
+    }
+
+    .team-card-info {
+      padding: 1.2rem 1.4rem 1.4rem;
+    }
+
+    .team-card-info h3 {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      color: var(--ink);
+      font-weight: 400;
+      margin-bottom: 0.2rem;
+    }
+
+    .team-card-info .role {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.5rem;
+    }
+
+    .team-card-info .bio {
+      font-size: 0.8rem;
+      color: var(--slate);
+      line-height: 1.6;
+    }
+
+    /* ── PUBLICATIONS ── */
+    .publications {
+      padding: clamp(5rem, 10vw, 9rem) 0;
+      background: var(--off-white);
+    }
+
+    .pub-list { margin-top: 3rem; }
+
+    .pub-item {
+      display: grid;
+      grid-template-columns: 60px 1fr auto;
+      gap: 1.5rem;
+      align-items: start;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--mist);
+      transition: all 0.25s;
+    }
+
+    .pub-item:first-child { border-top: 1px solid var(--mist); }
+
+    .pub-item:hover { padding-left: 0.8rem; }
+
+    .pub-year {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      color: var(--teal);
+      line-height: 1.3;
+    }
+
+    .pub-content h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.45;
+      margin-bottom: 0.3rem;
+    }
+
+    .pub-journal {
+      font-size: 0.8rem;
+      color: var(--teal-dark);
+      font-style: italic;
+      margin-bottom: 0.15rem;
+    }
+
+    .pub-authors {
+      font-size: 0.75rem;
+      color: var(--slate);
+    }
+
+    .pub-link {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal);
+      border: 1px solid var(--mist);
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      transition: all 0.25s;
+      white-space: nowrap;
+      align-self: center;
+    }
+
+    .pub-link:hover {
+      background: var(--teal);
+      color: var(--white);
+      border-color: var(--teal);
+    }
+
+    /* ── INVESTORS ── */
+    .investors {
+      padding: clamp(5rem, 10vw, 9rem) 0;
+      background: var(--white);
+    }
+
+    .investors-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .investor-card {
+      border: 1px solid var(--mist);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      background: var(--white);
+      transition: all 0.4s var(--ease);
+    }
+
+    .investor-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.05);
+      border-color: transparent;
+    }
+
+    .investor-card h3 {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      color: var(--ink);
+      margin-bottom: 0.8rem;
+      font-weight: 400;
+    }
+
+    .investor-card p {
+      font-size: 0.9rem;
+      color: var(--slate);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .investor-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .investor-links a {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--teal);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .investor-links a:hover {
+      color: var(--teal-dark);
+      transform: translateX(4px);
+    }
+
+    .investor-links a svg { width: 15px; height: 15px; }
+
+    /* ── CONTACT ── */
+    .contact {
+      padding: clamp(5rem, 10vw, 9rem) 0;
+      background: var(--off-white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: clamp(3rem, 6vw, 5rem);
+      margin-top: 3rem;
+    }
+
+    .contact-info h3 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      color: var(--ink);
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info > p {
+      font-size: 0.95rem;
+      color: var(--slate);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .contact-details { display: flex; flex-direction: column; gap: 1rem; }
+
+    .contact-detail {
+      display: flex;
+      gap: 0.8rem;
+      align-items: flex-start;
+    }
+
+    .contact-detail-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--teal-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--teal);
+    }
+
+    .contact-detail-icon svg { width: 15px; height: 15px; }
+
+    .contact-detail-text { font-size: 0.88rem; color: var(--charcoal); line-height: 1.6; }
+
+    .contact-detail-text strong {
+      display: block;
+      font-weight: 700;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--slate);
+      margin-bottom: 0.15rem;
+    }
+
+    .contact-form {
+      background: var(--white);
+      border: 1px solid var(--mist);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-group { display: flex; flex-direction: column; gap: 0.35rem; }
+
+    .form-group label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--slate);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 0.85rem 1rem;
+      background: var(--off-white);
+      border: 1px solid var(--mist);
+      border-radius: 8px;
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      transition: border-color 0.25s, box-shadow 0.25s;
+      outline: none;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: var(--silver); }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--teal);
+      box-shadow: 0 0 0 3px var(--teal-muted);
+    }
+
+    .form-group textarea { min-height: 110px; resize: vertical; }
+
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238492a6' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+    }
+
+    .form-group select option { background: var(--white); }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--ink);
+      color: var(--silver);
+      padding: 4rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr repeat(3, 1fr);
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer .logo { color: var(--white); margin-bottom: 0.8rem; }
+
+    .footer-brand p {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.7;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col a {
+      display: block;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.45);
+      padding: 0.25rem 0;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover { color: var(--white); }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p { font-size: 0.72rem; color: rgba(255,255,255,0.3); }
+
+    .footer-legal { display: flex; gap: 1.5rem; }
+
+    .footer-legal a {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.3);
+      transition: color 0.2s;
+    }
+
+    .footer-legal a:hover { color: rgba(255,255,255,0.7); }
+
+    /* ── KEYFRAMES ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes breathe {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+    }
+
+    @keyframes spinSlow {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(6px, -8px); }
+      50% { transform: translate(-4px, -12px); }
+      75% { transform: translate(-8px, -4px); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.5); }
+    }
+
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .hero-content { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-visual { height: 340px; }
+      .science-grid { grid-template-columns: 1fr 1fr; }
+      .management-grid { grid-template-columns: 1fr 1fr; }
+      .pipeline-table-head,
+      .pipeline-row { grid-template-columns: 1.8fr 1fr repeat(4, 1fr); }
+      .investors-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .menu-toggle { display: flex; }
+      .metrics-grid { grid-template-columns: 1fr 1fr; }
+      .metric:nth-child(2)::after { display: none; }
+      .science-grid { grid-template-columns: 1fr; }
+      .management-grid { grid-template-columns: 1fr 1fr; }
+      .pipeline-table-head { display: none; }
+      .pipeline-row { grid-template-columns: 1fr; gap: 0.6rem; }
+      .pub-item { grid-template-columns: 1fr; gap: 0.6rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .management-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
-<body class="bg-background text-on-surface">
-<header class="fixed top-0 w-full z-50 bg-slate-50/80 backdrop-blur-md border-b border-slate-200/50">
-<nav class="flex justify-between items-center w-full px-8 py-5 max-w-screen-2xl mx-auto">
-<div class="text-2xl font-headline font-bold tracking-tight text-primary"><div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-3xl text-primary">clinical_notes</span>
-<span class="tracking-tight">Onco<span class="text-on-primary-container font-light">Curator</span></span>
-</div></div>
-<div class="hidden md:flex items-center space-x-10">
-<a class="text-primary font-bold text-sm tracking-wide border-b-2 border-primary pb-1" href="#">HOME</a>
-<a class="text-slate-500 font-semibold text-sm tracking-wide hover:text-primary transition-colors" href="#pipeline">PIPELINE</a>
-<a class="text-slate-500 font-semibold text-sm tracking-wide hover:text-primary transition-colors" href="#science">SCIENCE</a>
-<a class="text-slate-500 font-semibold text-sm tracking-wide hover:text-primary transition-colors" href="#investors">INVESTORS</a>
-<a class="text-slate-500 font-semibold text-sm tracking-wide hover:text-primary transition-colors" href="#about">ABOUT</a>
-</div>
-<div class="flex items-center space-x-6">
-<button class="material-symbols-outlined text-on-surface-variant hover:text-primary">search</button>
-<button class="bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm uppercase tracking-wider hover:opacity-90 transition-all">Connect</button>
-</div>
-</nav>
-</header>
-<section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-primary text-center">
-<div class="absolute inset-0 opacity-40">
-<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGBB_8Y3dZ4TId5GDapdeWNnMc8Y-jmKemjCtUOuclOiWAck57khAvrVM1Yz3hlHHj-_c6qEJsr0ltRljBKoMeaoIkUqoo1_H0bluCJt01u2EPDUU4vQk0swtGDTtinWiQKSgnQFRBFx2APJGM0hCZKrdgiF2hBvhmFokJ2THfi-CFyOd-FsGQBF3tUyFxfP5kppI5n4W3Izf2rRT2n8XuMDIfLafhQz0OYr993aUtL3kgUbC3jnohM4q3RL4Hc5FtLea20hvNWxY"/>
-<div class="absolute inset-0 bg-gradient-to-b from-primary via-primary/70 to-primary"></div>
-</div>
-<div class="relative z-10 max-w-5xl mx-auto px-8 py-20 flex flex-col items-center">
-<div class="inline-block px-4 py-1 rounded-full bg-on-primary-container/10 border border-on-primary-container/20 text-on-primary-container text-xs font-bold tracking-[0.2em] uppercase mb-8">
-            The Next Era of Precision Oncology
+<body>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="mobileClose" aria-label="Close">&times;</button>
+    <a href="#home" onclick="closeMobile()">Home</a>
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#pipeline" onclick="closeMobile()">Pipeline</a>
+    <a href="#science" onclick="closeMobile()">Science</a>
+    <a href="#management" onclick="closeMobile()">Team</a>
+    <a href="#publications" onclick="closeMobile()">Publications</a>
+    <a href="#investors" onclick="closeMobile()">Investors</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <svg class="logo-icon" viewBox="0 0 34 34" fill="none">
+          <circle cx="17" cy="17" r="15.5" stroke="#0e9aa7" stroke-width="1.2"/>
+          <circle cx="17" cy="17" r="8" stroke="#0e9aa7" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
+          <path d="M17 1.5C17 1.5 23 9 23 17C23 25 17 32.5 17 32.5" stroke="#0e9aa7" stroke-width="0.8" opacity="0.6"/>
+          <path d="M17 1.5C17 1.5 11 9 11 17C11 25 17 32.5 17 32.5" stroke="#0e9aa7" stroke-width="0.8" opacity="0.4"/>
+          <circle cx="17" cy="17" r="3" fill="#0e9aa7" opacity="0.15"/>
+          <circle cx="17" cy="17" r="1.5" fill="#0e9aa7" opacity="0.4"/>
+        </svg>
+        Meridian
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="#science">Science</a>
+        <a href="#management">Team</a>
+        <a href="#publications">Publications</a>
+        <a href="#investors">Investors</a>
+        <a href="#contact" class="nav-cta">Contact Us</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Clinical-Stage Oncology
         </div>
-<h1 class="text-6xl md:text-8xl text-white font-headline leading-[1.1] tracking-tight mb-8 max-w-4xl uppercase">
-            Advancing the Next <span class="text-on-primary-container">Era</span> of Precision
-        </h1>
-<p class="text-xl text-blue-100/70 max-w-2xl mb-12 font-body leading-relaxed">
-            OncoCurator leverages proprietary protein-mapping platforms to identify and target elusive cancer vulnerabilities, turning clinical complexity into targeted solutions.
+        <h1>Redefining How the World <span class="teal">Fights Cancer</span></h1>
+        <p class="hero-desc">
+          Meridian Oncology is advancing next-generation therapeutics that target the molecular drivers of treatment-resistant cancers, with multiple programs in clinical development.
         </p>
-<div class="flex flex-wrap justify-center gap-6">
-<button class="bg-white text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-all uppercase tracking-tight shadow-xl">
-                Our Science
-            </button>
-<button class="border-2 border-white/30 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-all uppercase tracking-tight">
-                Investors
-            </button>
-</div>
-</div>
-</section>
-<section class="py-32 bg-surface border-y border-outline-variant/10" id="about">
-<div class="max-w-screen-xl mx-auto px-8 text-center">
-<div class="max-w-3xl mx-auto mb-20">
-<h2 class="text-5xl font-headline text-primary uppercase tracking-tight mb-8">Defining the Next Era of Precision</h2>
-<p class="text-on-surface-variant text-xl leading-relaxed">
-                At OncoCurator, we believe the cure for cancer lies within the data we haven't yet decoded. Our approach combines high-resolution proteomics with clinical-stage agility.
-            </p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center text-left">
-<div class="relative">
-<div class="aspect-video rounded-xl overflow-hidden shadow-2xl">
-<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSLmw8ZEFPv5ic-DK78xHE0BckjT86X8hTzFzLpjl81cH1PxjhzQYX4qncYapaD1CnB78eByMn0FLvo0FmoHMLJwZAPEUq-8fgekRkWYk9X0jz9oqdOFUn0feO7WJwM21WSO5qbZywRmpSE0_JP7gNo5xnvX3tMLHzgBI3BPLVeaNzqNL6Wlb7A4D1R9k6EczK1P-NX09-0rbClsdNFkRfnDme6Oa28INuxGhjF4RFhcrRTMnDFIUFnXNVUMolnp8p1rpHGZsT9xI"/>
-</div>
-<div class="absolute -bottom-8 -right-8 bg-primary-container p-8 rounded-xl text-white max-w-xs shadow-2xl border border-white/10">
-<h4 class="text-xl font-headline mb-2 uppercase">Precision-First Engine</h4>
-<p class="text-blue-100/70 text-sm font-body leading-relaxed">Small-molecule inhibitors targeting the previously inaccessible genome.</p>
-</div>
-</div>
-<div class="space-y-12">
-<div class="grid grid-cols-2 gap-12">
-<div class="border-l-4 border-primary pl-6">
-<p class="text-5xl font-headline text-primary mb-2">12+</p>
-<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Patented Targets</p>
-</div>
-<div class="border-l-4 border-primary pl-6">
-<p class="text-5xl font-headline text-primary mb-2">3</p>
-<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Clinical Stages</p>
-</div>
-</div>
-<p class="text-on-surface-variant text-lg">
-                    We are building a predictive engine that anticipates resistance mechanisms before they emerge, ensuring that our treatments remain effective for the long term.
-                </p>
-<button class="text-primary font-bold flex items-center group">
-                    LEARN MORE ABOUT OUR MISSION
-                    <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-</section>
-<section class="py-32 bg-surface-container-low" id="pipeline">
-<div class="max-w-4xl mx-auto px-8">
-<div class="text-center mb-20">
-<h2 class="text-5xl font-headline text-primary uppercase mb-4">Development Pipeline</h2>
-<p class="text-on-surface-variant text-lg">A portfolio focused on high-unmet-need malignancies.</p>
-</div>
-<div class="space-y-6">
-<div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/30 transition-all group">
-<div class="flex flex-col md:flex-row justify-between mb-8 gap-4">
-<div>
-<h3 class="text-2xl font-headline text-primary uppercase">OC-101 (BTK Inhibitor)</h3>
-<p class="text-on-surface-variant">Relapsed B-cell Lymphoma</p>
-</div>
-<div class="text-right">
-<span class="text-xs font-bold bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full uppercase">Phase 2 Ongoing</span>
-</div>
-</div>
-<div class="grid grid-cols-4 gap-2 text-[10px] font-bold uppercase tracking-tighter text-outline mb-2">
-<div>Discovery</div>
-<div>Pre-clinical</div>
-<div>Phase 1</div>
-<div>Phase 2</div>
-</div>
-<div class="relative h-3 bg-surface-container rounded-full overflow-hidden flex">
-<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
-<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
-<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
-<div class="h-full bg-primary-container/30 w-[15%]"></div>
-</div>
-</div>
-<div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/30 transition-all">
-<div class="flex flex-col md:flex-row justify-between mb-8 gap-4">
-<div>
-<h3 class="text-2xl font-headline text-primary uppercase">OC-204 (KRAS G12C)</h3>
-<p class="text-on-surface-variant">Non-Small Cell Lung Cancer</p>
-</div>
-<div class="text-right">
-<span class="text-xs font-bold bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full uppercase">Phase 1</span>
-</div>
-</div>
-<div class="grid grid-cols-4 gap-2 text-[10px] font-bold uppercase tracking-tighter text-outline mb-2">
-<div>Discovery</div>
-<div>Pre-clinical</div>
-<div>Phase 1</div>
-<div>Phase 2</div>
-</div>
-<div class="relative h-3 bg-surface-container rounded-full overflow-hidden flex">
-<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
-<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
-<div class="h-full bg-primary-container/30 w-[20%]"></div>
-<div class="h-full w-1/4"></div>
-</div>
-</div>
-<div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/30 transition-all">
-<div class="flex flex-col md:flex-row justify-between mb-8 gap-4">
-<div>
-<h3 class="text-2xl font-headline text-primary uppercase">OC-507 (Next-Gen ADC)</h3>
-<p class="text-on-surface-variant">HER2+ Metastatic Breast Cancer</p>
-</div>
-<div class="text-right">
-<span class="text-xs font-bold bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full uppercase">Phase 2</span>
-</div>
-</div>
-<div class="grid grid-cols-4 gap-2 text-[10px] font-bold uppercase tracking-tighter text-outline mb-2">
-<div>Discovery</div>
-<div>Pre-clinical</div>
-<div>Phase 1</div>
-<div>Phase 2</div>
-</div>
-<div class="relative h-3 bg-surface-container rounded-full overflow-hidden flex">
-<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
-<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
-<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
-<div class="h-full bg-primary-container w-1/4"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-32 bg-primary text-white text-center" id="science">
-<div class="max-w-screen-xl mx-auto px-8">
-<div class="max-w-3xl mx-auto mb-20">
-<h2 class="text-5xl font-headline uppercase mb-6">The Precision Engine</h2>
-<p class="text-blue-100/70 text-lg">ProteoSolve™: Our AI-driven platform for identifying undruggable targets.</p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-<div class="lg:col-span-7">
-<div class="relative group">
-<div class="absolute -inset-1 bg-gradient-to-r from-on-primary-container to-tertiary-fixed rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
-<div class="relative bg-black rounded-2xl p-4 overflow-hidden shadow-2xl">
-<img alt="" class="w-full h-auto rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD760xYRYSefCD0P91TvWKOQn9HoKTpa4wLIu1PX31um9PQmrzaHncmdhDltLXTbfS4DwA1MWiP-fsaU0toV9tgKtSES_skCTThASRE47XOndfqKhf-ZgHLaznRnAOgbtLe4ayPhJBpx1rBiMnSukzWv4CrdVIyxlvofGI-hi5XV4i_hQ_mK2RVEx210JfKGO67o2ozzvD2mJm2HvKfPGDXLCKlWDxmwofpGyoHau3Ds-N6s8CPxxRTNEiRBmLrkCwRZ6n43_2S-Qw"/>
-</div>
-</div>
-</div>
-<div class="lg:col-span-5 text-left space-y-8">
-<div class="flex gap-6 items-start">
-<div class="bg-white/5 border border-white/10 w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-primary-container">biotech</span>
-</div>
-<div>
-<h4 class="text-xl font-headline uppercase mb-2">Molecular Simulation</h4>
-<p class="text-blue-100/60 text-sm">Binding affinity modeling with 98% accuracy.</p>
-</div>
-</div>
-<div class="flex gap-6 items-start">
-<div class="bg-white/5 border border-white/10 w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-primary-container">speed</span>
-</div>
-<div>
-<h4 class="text-xl font-headline uppercase mb-2">Accelerated R&amp;D</h4>
-<p class="text-blue-100/60 text-sm">Optimization cycles reduced from years to months.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-32 bg-surface" id="investors">
-<div class="max-w-screen-xl mx-auto px-8 text-center">
-<div class="max-w-3xl mx-auto mb-20">
-<h2 class="text-5xl font-headline text-primary uppercase mb-4">Investment Pillars</h2>
-<p class="text-on-surface-variant text-lg">Value creation through scientific excellence.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="p-10 bg-white rounded-2xl border border-outline-variant/30 hover:shadow-2xl transition-all text-left group">
-<div class="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">verified_user</span>
-</div>
-<h4 class="text-2xl font-headline text-primary uppercase mb-4">IP Portfolio</h4>
-<p class="text-on-surface-variant leading-relaxed">40+ worldwide patents protecting our novel drug delivery systems.</p>
-</div>
-<div class="p-10 bg-white rounded-2xl border border-outline-variant/30 hover:shadow-2xl transition-all text-left group">
-<div class="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">analytics</span>
-</div>
-<h4 class="text-2xl font-headline text-primary uppercase mb-4">Phase 2 Growth</h4>
-<p class="text-on-surface-variant leading-relaxed">Lead OC-101 program results anticipated for Q3 2025 catalyst.</p>
-</div>
-<div class="p-10 bg-white rounded-2xl border border-outline-variant/30 hover:shadow-2xl transition-all text-left group">
-<div class="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">account_balance</span>
-</div>
-<h4 class="text-2xl font-headline text-primary uppercase mb-4">Capital Runway</h4>
-<p class="text-on-surface-variant leading-relaxed">Funded through 2026 with an R&amp;D-first capital allocation model.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-32 bg-slate-50">
-<div class="max-w-screen-xl mx-auto px-8">
-<div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-6">
-<h2 class="text-5xl font-headline text-primary uppercase">Precision Insights</h2>
-<button class="text-primary font-bold border-b-2 border-primary pb-1 uppercase tracking-wider text-sm">View All Resources</button>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-<article class="bg-white rounded-xl overflow-hidden border border-outline-variant/10 group flex flex-col">
-<div class="h-40 overflow-hidden">
-<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEao_IVQmMsUVrP-4Tqbxx2ClMxcTjXLKG6lqDj5FUHuRPoJQEMg7TlK1ythnX6H9jTAU5v-sK8N6myq9E7Aqk-A1z0E1KDCRZmTVSXBzlFRPgkEhIu-Nu7y4txolkagWcwxhwA3TI3ayQyEK-kyNN1w5ZMG1KhBoGQhwYX8XLFuRkH1Zf25QjFcsFRHbvZ2tJTCdFFbeVqk3-YiRvusqXrSVS1j1y7K23LKbKcWRJgTp7uBjF_5nEJLJHGUrTwhJkcw1COtkDxSY"/>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<span class="text-[10px] font-bold text-on-primary-container tracking-widest uppercase mb-4">Press Release</span>
-<h4 class="text-lg font-headline text-primary leading-tight mb-4 uppercase">FDA Fast Track for OC-101</h4>
-<time class="mt-auto text-xs text-outline">Oct 14, 2024</time>
-</div>
-</article>
-<article class="bg-white rounded-xl overflow-hidden border border-outline-variant/10 group flex flex-col">
-<div class="h-40 overflow-hidden">
-<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlDof_Ic4aJ_Pc_5Dfzf7NBA6bQF-QOy7RrngZHbdcc4nPPDEKnhoHqSyLeswduVRfvboMv1aupMHCSjHqOImbeqk8e0IN4wA-TNZX12oUQIsEXevQOLt5vv0i3YOhdTre0cA_5u_w_jv5WvWIrLlIxzTy5RufX3L1eJKXwj3R3E1_Fsl_c4omjfzWGrJuqApL7OZsFrbgmGSnzPbJ0mB4QA5FCSwEFRxEUVpeKGpoxO5cwBYTKmAnNhuHL57hkAIuAahXkAQYSWc"/>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<span class="text-[10px] font-bold text-on-primary-container tracking-widest uppercase mb-4">Publication</span>
-<h4 class="text-lg font-headline text-primary leading-tight mb-4 uppercase">The Inaccessible Genome</h4>
-<time class="mt-auto text-xs text-outline">Sep 28, 2024</time>
-</div>
-</article>
-<article class="bg-white rounded-xl overflow-hidden border border-outline-variant/10 group flex flex-col">
-<div class="h-40 overflow-hidden">
-<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8xnhTBDrbgcSVygU6Y7cZXYhfvAMQu0iqr536MjYaRKj-EMQOJuXQ0nHEcQfTPZjRzmV-X51-RUGMNTVeU6sv_0LuaPOz1atDhtFZ-LVUg3VQZ87nSvT6dtlOjAFrR12buHhvIpk2M7GYEcqcMVgf8fp62En_p6ooTTop7DsNHpV0M0v1fE-ZgK2378ZLzolHw5XCf0LsASI6P43JWt3H-qpExiUbNiRhOZaSP5CgrJw5U4UV7vWDQwAopBdKlE1CI0geVWyFMxk"/>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<span class="text-[10px] font-bold text-on-primary-container tracking-widest uppercase mb-4">Financials</span>
-<h4 class="text-lg font-headline text-primary leading-tight mb-4 uppercase">Q3 Clinical Pipeline Update</h4>
-<time class="mt-auto text-xs text-outline">Sep 12, 2024</time>
-</div>
-</article>
-<article class="bg-white rounded-xl overflow-hidden border border-outline-variant/10 group flex flex-col">
-<div class="h-40 overflow-hidden">
-<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSRnIpG_0mZwrwGWSeU8HQarQQ1pJAjQ6JNa6TXjTkYTlzTN4qCVcxPoFjIuVyt_FDh8Ai2WM7LOLfIducB6IdIyffa4bxlLNwpfEibZiePshLi_2j4FNKrv-W7xQW9nQtEmMUiYXe98rFSVyPJlIZYIBL8WTtt7PalaFBfaaGPNTFTN5hI6-FgBHZzojY3Ht1vZYLrFKWxOhyB1E0GJOuy3Q2DkPEVJoDVJmcBLqME8sPRgz8khLRdxhkY-iZZbLBpNXFwjFI8R0"/>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<span class="text-[10px] font-bold text-on-primary-container tracking-widest uppercase mb-4">Event</span>
-<h4 class="text-lg font-headline text-primary leading-tight mb-4 uppercase">ASCO Presentation OC-507</h4>
-<time class="mt-auto text-xs text-outline">Aug 30, 2024</time>
-</div>
-</article>
-</div>
-</div>
-</section>
-<section class="bg-primary text-white py-32 text-center">
-<div class="max-w-4xl mx-auto px-8">
-<h2 class="text-5xl md:text-6xl font-headline uppercase mb-10 leading-tight">Partner in the Next Era of Oncology</h2>
-<div class="flex flex-wrap justify-center gap-6">
-<button class="bg-on-primary-container text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-opacity-90 transition-all uppercase tracking-wider">Contact Our Team</button>
-<button class="border border-white/20 px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/5 transition-all uppercase tracking-wider">Investor Deck</button>
-</div>
-</div>
-</section>
-<footer class="bg-slate-900 text-white w-full py-20 px-8">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-xl mx-auto border-b border-white/10 pb-20">
-<div>
-<div class="font-headline text-2xl font-bold mb-6"><div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-3xl text-on-primary-container">clinical_notes</span>
-<span class="tracking-tight">Onco<span class="text-on-primary-container font-light">Curator</span></span>
-</div></div>
-<p class="text-slate-400 text-sm leading-relaxed">Advancing precision oncology through deep molecular insights and clinical agility. Headquartered in Cambridge, MA.</p>
-</div>
-<div>
-<h5 class="font-headline text-sm uppercase tracking-widest mb-8">Platform</h5>
-<ul class="space-y-4 text-sm text-slate-400">
-<li><a class="hover:text-white" href="#">Pipeline Overview</a></li>
-<li><a class="hover:text-white" href="#">ProteoSolve™ Engine</a></li>
-<li><a class="hover:text-white" href="#">Research Ethics</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-headline text-sm uppercase tracking-widest mb-8">Resources</h5>
-<ul class="space-y-4 text-sm text-slate-400">
-<li><a class="hover:text-white" href="#">SEC Filings</a></li>
-<li><a class="hover:text-white" href="#">Clinical Trials</a></li>
-<li><a class="hover:text-white" href="#">Press Center</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-headline text-sm uppercase tracking-widest mb-8">Contact</h5>
-<p class="text-slate-400 text-sm mb-4">Cambridge Tech Park<br/>Cambridge, MA 02142</p>
-<a class="text-on-primary-container font-bold" href="mailto:info@oncocurator.com">info@oncocurator.com</a>
-</div>
-</div>
-<div class="max-w-screen-xl mx-auto pt-10 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 gap-4">
-<p>© 2024 OncoCurator Oncology. Engineered for Precision.</p>
-<div class="flex gap-8">
-<a class="hover:text-white" href="#">LinkedIn</a>
-<a class="hover:text-white" href="#">Twitter</a>
-<a class="hover:text-white" href="#">Privacy</a>
-</div>
-</div>
-</footer>
-</body></html>
+        <div class="hero-actions">
+          <a href="#pipeline" class="btn btn-primary">
+            Explore Our Pipeline
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#investors" class="btn btn-outline">
+            Investor Overview
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-stack">
+          <div class="hero-img-accent"></div>
+          <div class="hero-img-main">
+            <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800&q=80" alt="Scientist examining samples in oncology research laboratory" loading="eager">
+          </div>
+          <div class="hero-img-secondary">
+            <img src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=600&q=80" alt="Advanced microscopy and cell analysis" loading="eager">
+          </div>
+          <div class="hero-float-badge">
+            <div class="hero-float-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div class="hero-float-text">
+              <div class="num">5</div>
+              <div class="label">Active Trials</div>
+            </div>
+          </div>
+          <div class="hero-img-dots">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-bar"></div>
+    </div>
+  </section>
+
+  <!-- Metrics -->
+  <section class="metrics">
+    <div class="container-wide">
+      <div class="metrics-grid">
+        <div class="metric reveal">
+          <div class="metric-num">5</div>
+          <div class="metric-text">Clinical Programs</div>
+        </div>
+        <div class="metric reveal d1">
+          <div class="metric-num">3</div>
+          <div class="metric-text">Phase II Trials</div>
+        </div>
+        <div class="metric reveal d2">
+          <div class="metric-num">12+</div>
+          <div class="metric-text">Patent Families</div>
+        </div>
+        <div class="metric reveal d3">
+          <div class="metric-num">40+</div>
+          <div class="metric-text">Publications</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-label reveal">About Meridian</div>
+          <h2 class="section-title reveal d1">A Singular Focus on <em>Oncology Innovation</em></h2>
+          <p class="reveal d2">Founded on the conviction that understanding tumor biology at its deepest level is the path to transformative medicines, Meridian Oncology combines world-class translational science with disciplined clinical development.</p>
+          <p class="reveal d3">Our approach integrates proprietary target discovery, rational drug design, and biomarker-driven patient selection to develop therapies addressing the most critical unmet needs in oncology. We focus on treatment resistance and the tumor microenvironment.</p>
+          <div class="reveal d4" style="margin-top: 1rem;">
+            <a href="#science" class="btn btn-ghost">
+              Learn About Our Science
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="about-visual reveal d2">
+          <div class="about-card">
+            <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=700&q=80" alt="Biotech research laboratory with advanced equipment" loading="lazy">
+            <div class="about-card-inner">
+              <span class="about-card-tag">Research Laboratory</span>
+            </div>
+          </div>
+          <div class="about-card">
+            <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=600&q=80" alt="Clinical team reviewing patient data" loading="lazy">
+            <div class="about-card-inner">
+              <span class="about-card-tag">Clinical Operations</span>
+            </div>
+          </div>
+          <div class="about-float-stat">
+            <div class="num">98%</div>
+            <div class="label">Target Selectivity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax Divider -->
+  <div class="parallax-section">
+    <div class="parallax-bg" data-parallax="0.2">
+      <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1400&q=80" alt="Laboratory research" loading="lazy">
+    </div>
+    <div class="parallax-overlay"></div>
+    <div class="parallax-inner reveal">
+      <blockquote>&ldquo;The future of cancer treatment lies not in a single breakthrough, but in the precision of understanding each tumor's unique vulnerabilities.&rdquo;</blockquote>
+      <cite>Dr. Elena Vasquez — Chief Scientific Officer</cite>
+    </div>
+  </div>
+
+  <!-- Pipeline -->
+  <section class="pipeline" id="pipeline">
+    <div class="container">
+      <div class="pipeline-header">
+        <div class="section-label reveal">Therapeutic Pipeline</div>
+        <h2 class="section-title reveal d1">Advancing <em>Five Programs</em> Across Oncology</h2>
+        <p class="section-subtitle reveal d2">Our diversified pipeline targets distinct biological pathways across multiple solid tumor indications, from preclinical to Phase II.</p>
+      </div>
+
+      <div class="pipeline-table-head reveal d3">
+        <span>Program</span>
+        <span>Indication</span>
+        <span>Preclinical</span>
+        <span>Phase I</span>
+        <span>Phase II</span>
+        <span>Phase III</span>
+      </div>
+
+      <div class="pipeline-row reveal">
+        <div class="pipeline-drug">MRD-1247 <small>Bispecific Antibody</small></div>
+        <div class="pipeline-indication">Non-Small Cell Lung Cancer</div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill active" style="width:100%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill active" style="width:100%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill active" style="width:60%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill" style="width:0%"></div></div>
+      </div>
+
+      <div class="pipeline-row reveal d1">
+        <div class="pipeline-drug">MRD-3891 <small>Small Molecule Inhibitor</small></div>
+        <div class="pipeline-indication">Triple-Negative Breast Cancer</div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill active" style="width:100%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill active" style="width:100%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill active" style="width:30%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill" style="width:0%"></div></div>
+      </div>
+
+      <div class="pipeline-row reveal d2">
+        <div class="pipeline-drug">MRD-5520 <small>ADC Conjugate</small></div>
+        <div class="pipeline-indication">Hepatocellular Carcinoma</div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill active" style="width:100%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill active" style="width:100%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill active" style="width:45%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill" style="width:0%"></div></div>
+      </div>
+
+      <div class="pipeline-row reveal d3">
+        <div class="pipeline-drug">MRD-7104 <small>Immune Checkpoint</small></div>
+        <div class="pipeline-indication">Pancreatic Adenocarcinoma</div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill active" style="width:100%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill active" style="width:70%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill" style="width:0%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill" style="width:0%"></div></div>
+      </div>
+
+      <div class="pipeline-row reveal d4">
+        <div class="pipeline-drug">MRD-9230 <small>RNA Therapeutic</small></div>
+        <div class="pipeline-indication">Glioblastoma Multiforme</div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill active" style="width:80%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill" style="width:0%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill" style="width:0%"></div></div>
+        <div class="pipeline-bar"><div class="pipeline-bar-fill" style="width:0%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Science -->
+  <section class="science" id="science">
+    <div class="container">
+      <div class="science-header">
+        <div class="section-label reveal">Our Science</div>
+        <h2 class="section-title reveal d1">Three Platforms Driving <em>Discovery</em></h2>
+        <p class="section-subtitle reveal d2" style="margin: 0 auto;">Integrated science from target identification through clinical proof-of-concept.</p>
+      </div>
+      <div class="science-grid">
+        <div class="science-card reveal">
+          <div class="science-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <h3>Precision Target Discovery</h3>
+          <p>Proprietary computational and functional genomics platform identifying novel targets by mapping the genetic dependencies of treatment-resistant tumors at single-cell resolution.</p>
+        </div>
+        <div class="science-card reveal d1">
+          <div class="science-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2v20M12 2v20M18 2v20"/><circle cx="6" cy="8" r="2.5"/><circle cx="12" cy="15" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 8L9.5 15"/><path d="M14.5 15L15.5 6"/></svg>
+          </div>
+          <h3>Rational Drug Design</h3>
+          <p>Structure-guided medicinal chemistry combining AI-driven molecular modeling with high-throughput screening to optimize candidates for potency, selectivity, and pharmacokinetics.</p>
+        </div>
+        <div class="science-card reveal d2">
+          <div class="science-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 3v18"/><path d="M15 3v18"/></svg>
+          </div>
+          <h3>Biomarker-Driven Development</h3>
+          <p>Integrated translational strategy embedding companion diagnostics from the earliest stages to identify patients most likely to benefit from our therapies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax Divider 2 -->
+  <div class="parallax-section">
+    <div class="parallax-bg" data-parallax="0.15">
+      <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1400&q=80" alt="Medical research and patient care" loading="lazy">
+    </div>
+    <div class="parallax-overlay"></div>
+    <div class="parallax-inner reveal">
+      <blockquote>&ldquo;Our mission is to transform the lives of patients facing cancers with the fewest treatment options.&rdquo;</blockquote>
+      <cite>Meridian Oncology — Company Mission</cite>
+    </div>
+  </div>
+
+  <!-- Management -->
+  <section class="management" id="management">
+    <div class="container">
+      <div class="management-header">
+        <div>
+          <div class="section-label reveal">Leadership</div>
+          <h2 class="section-title reveal d1">Experienced Team, <em>Proven Track Record</em></h2>
+        </div>
+        <a href="#" class="btn btn-outline reveal d2">
+          Full Team
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="management-grid">
+        <div class="team-card reveal">
+          <div class="team-card-photo">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Dr. James Harrington" loading="lazy">
+          </div>
+          <div class="team-card-info">
+            <h3>Dr. James Harrington</h3>
+            <div class="role">Chief Executive Officer</div>
+            <p class="bio">Former VP of Oncology at a top-10 pharma. 25+ years in oncology drug development with three FDA-approved therapies.</p>
+          </div>
+        </div>
+        <div class="team-card reveal d1">
+          <div class="team-card-photo">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Dr. Elena Vasquez" loading="lazy">
+          </div>
+          <div class="team-card-info">
+            <h3>Dr. Elena Vasquez</h3>
+            <div class="role">Chief Scientific Officer</div>
+            <p class="bio">Pioneer in tumor microenvironment biology. Previously led translational oncology at a leading academic medical center.</p>
+          </div>
+        </div>
+        <div class="team-card reveal d2">
+          <div class="team-card-photo">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" alt="Michael Kessler" loading="lazy">
+          </div>
+          <div class="team-card-info">
+            <h3>Michael Kessler</h3>
+            <div class="role">Chief Financial Officer</div>
+            <p class="bio">Former Managing Director at a top biotech investment bank. Led $2B+ in life sciences financing transactions.</p>
+          </div>
+        </div>
+        <div class="team-card reveal d3">
+          <div class="team-card-photo">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80" alt="Dr. Sarah Park" loading="lazy">
+          </div>
+          <div class="team-card-info">
+            <h3>Dr. Sarah Park</h3>
+            <div class="role">Chief Medical Officer</div>
+            <p class="bio">Board-certified oncologist with extensive clinical trial leadership. Previously head of clinical development at a major CRO.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section class="publications" id="publications">
+    <div class="container">
+      <div class="section-label reveal">Publications</div>
+      <h2 class="section-title reveal d1">Selected <em>Scientific Publications</em></h2>
+      <div class="pub-list">
+        <div class="pub-item reveal">
+          <div class="pub-year">2026</div>
+          <div class="pub-content">
+            <h3>Bispecific Antibody MRD-1247 Demonstrates Durable Responses in Treatment-Resistant NSCLC: Phase II Interim Analysis</h3>
+            <div class="pub-journal">Journal of Clinical Oncology</div>
+            <div class="pub-authors">Vasquez E, Park S, Chen L, et al.</div>
+          </div>
+          <a href="#" class="pub-link">Read</a>
+        </div>
+        <div class="pub-item reveal d1">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <h3>Novel ADC Targeting Strategy Overcomes Resistance Mechanisms in Hepatocellular Carcinoma Preclinical Models</h3>
+            <div class="pub-journal">Nature Medicine</div>
+            <div class="pub-authors">Harrington J, Li W, Vasquez E, et al.</div>
+          </div>
+          <a href="#" class="pub-link">Read</a>
+        </div>
+        <div class="pub-item reveal d2">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <h3>Single-Cell Atlas of the Pancreatic Tumor Microenvironment Reveals Actionable Immune Checkpoint Targets</h3>
+            <div class="pub-journal">Cell</div>
+            <div class="pub-authors">Park S, Vasquez E, Rahman A, et al.</div>
+          </div>
+          <a href="#" class="pub-link">Read</a>
+        </div>
+        <div class="pub-item reveal d3">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <h3>Computational Framework for Identifying Synthetic Lethal Targets in Triple-Negative Breast Cancer</h3>
+            <div class="pub-journal">Cancer Discovery</div>
+            <div class="pub-authors">Vasquez E, Chen L, Okafor D, et al.</div>
+          </div>
+          <a href="#" class="pub-link">Read</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Investors -->
+  <section class="investors" id="investors">
+    <div class="container">
+      <div class="section-label reveal">Investor Relations</div>
+      <h2 class="section-title reveal d1">Building Long-Term <em>Shareholder Value</em></h2>
+      <div class="investors-grid">
+        <div class="investor-card reveal d2">
+          <h3>Financial Information</h3>
+          <p>Access our latest financial reports, SEC filings, and quarterly earnings materials. We maintain the highest standards of transparency and corporate governance.</p>
+          <div class="investor-links">
+            <a href="#">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+              Annual Report 2025
+            </a>
+            <a href="#">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+              Q1 2026 Earnings Release
+            </a>
+            <a href="#">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+              SEC Filings
+            </a>
+          </div>
+        </div>
+        <div class="investor-card reveal d3">
+          <h3>Corporate Presentations</h3>
+          <p>View our latest investor presentations, conference materials, and corporate overview decks prepared for institutional investors and analyst meetings.</p>
+          <div class="investor-links">
+            <a href="#">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+              Corporate Overview Deck
+            </a>
+            <a href="#">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+              R&D Day Presentation
+            </a>
+            <a href="#">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+              Investor Fact Sheet
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label reveal">Get in Touch</div>
+      <h2 class="section-title reveal d1">Contact <em>Meridian Oncology</em></h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal d2">
+          <h3>We welcome inquiries from the medical community, investors, and potential partners.</h3>
+          <p>Whether you are a healthcare professional, an investor, or a partner exploring collaboration, our team is ready to assist.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Headquarters</strong>
+                245 Innovation Drive, Suite 800<br>Cambridge, MA 02142
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <strong>General Inquiries</strong>
+                info@meridianonc.com
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Investor Relations</strong>
+                ir@meridianonc.com<br>+1 (617) 555-0142
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal d3" onsubmit="event.preventDefault();">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="Jane">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Smith">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="jane.smith@example.com">
+          </div>
+          <div class="form-group">
+            <label for="inquiry">Inquiry Type</label>
+            <select id="inquiry">
+              <option value="" disabled selected>Select inquiry type</option>
+              <option>Investor Relations</option>
+              <option>Clinical Trials</option>
+              <option>Business Development</option>
+              <option>Media Inquiry</option>
+              <option>Career Opportunities</option>
+              <option>General</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="How can we help you?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start;">
+            Send Message
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <svg class="logo-icon" viewBox="0 0 34 34" fill="none">
+              <circle cx="17" cy="17" r="15.5" stroke="rgba(14,154,167,0.5)" stroke-width="1.2"/>
+              <circle cx="17" cy="17" r="8" stroke="rgba(14,154,167,0.3)" stroke-width="0.8" stroke-dasharray="3 3"/>
+              <path d="M17 1.5C17 1.5 23 9 23 17C23 25 17 32.5 17 32.5" stroke="rgba(14,154,167,0.4)" stroke-width="0.8"/>
+              <path d="M17 1.5C17 1.5 11 9 11 17C11 25 17 32.5 17 32.5" stroke="rgba(14,154,167,0.3)" stroke-width="0.8"/>
+              <circle cx="17" cy="17" r="1.5" fill="rgba(14,154,167,0.5)"/>
+            </svg>
+            Meridian
+          </a>
+          <p>A clinical-stage biopharmaceutical company pioneering next-generation therapeutics for treatment-resistant cancers.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="#management">Leadership</a>
+          <a href="#">Careers</a>
+          <a href="#">News</a>
+        </div>
+        <div class="footer-col">
+          <h4>Science</h4>
+          <a href="#pipeline">Pipeline</a>
+          <a href="#science">Our Science</a>
+          <a href="#publications">Publications</a>
+          <a href="#">Clinical Trials</a>
+        </div>
+        <div class="footer-col">
+          <h4>Investors</h4>
+          <a href="#investors">Financial Reports</a>
+          <a href="#">SEC Filings</a>
+          <a href="#">Press Releases</a>
+          <a href="#">Events</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Meridian Oncology, Inc. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── PARALLAX ──
+    const parallaxEls = document.querySelectorAll('[data-parallax]');
+    function updateParallax() {
+      parallaxEls.forEach(el => {
+        const speed = parseFloat(el.dataset.parallax);
+        const rect = el.parentElement.getBoundingClientRect();
+        const center = rect.top + rect.height / 2;
+        const offset = (window.innerHeight / 2 - center) * speed;
+        el.style.transform = `translateY(${offset}px)`;
+      });
+    }
+
+    // ── REVEAL ──
+    const reveals = document.querySelectorAll('.reveal');
+    function checkReveal() {
+      const wh = window.innerHeight;
+      reveals.forEach(el => {
+        if (el.getBoundingClientRect().top < wh * 0.88) el.classList.add('vis');
+      });
+    }
+
+    // ── NAV ──
+    const nav = document.getElementById('nav');
+    function checkNav() { nav.classList.toggle('scrolled', window.scrollY > 50); }
+
+    // ── SCROLL ──
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => { updateParallax(); checkReveal(); checkNav(); ticking = false; });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    checkReveal();
+    checkNav();
+
+    // ── MOBILE MENU ──
+    document.getElementById('menuToggle').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('active'));
+    document.getElementById('mobileClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('active'));
+    function closeMobile() { document.getElementById('mobileMenu').classList.remove('active'); }
+
+    // ── SMOOTH SCROLL ──
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const t = document.querySelector(link.getAttribute('href'));
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+  </script>
+</body>
+</html>
