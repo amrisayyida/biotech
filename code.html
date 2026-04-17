@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#002e5d",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#466366",
+                    "background": "#f8f9fa",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#003535",
+                    "surface-container-low": "#f3f4f5",
+                    "tertiary": "#001e1e",
+                    "surface": "#f8f9fa",
+                    "on-secondary-fixed-variant": "#2f4b4e",
+                    "on-tertiary-fixed": "#002020",
+                    "on-tertiary-fixed-variant": "#004f4f",
+                    "surface-variant": "#e1e3e4",
+                    "secondary-fixed": "#c9e8ec",
+                    "tertiary-fixed-dim": "#76d6d5",
+                    "on-primary-fixed": "#001b3c",
+                    "inverse-on-surface": "#f0f1f2",
+                    "primary-fixed": "#d5e3ff",
+                    "outline": "#747781",
+                    "inverse-primary": "#a7c8ff",
+                    "secondary-container": "#c6e5e9",
+                    "surface-bright": "#f8f9fa",
+                    "tertiary-fixed": "#93f2f2",
+                    "on-primary-container": "#7497d0",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#191c1d",
+                    "inverse-surface": "#2e3132",
+                    "surface-container-high": "#e7e8e9",
+                    "on-secondary-fixed": "#002022",
+                    "primary-fixed-dim": "#a7c8ff",
+                    "primary": "#001a38",
+                    "surface-container": "#edeeef",
+                    "surface-dim": "#d9dadb",
+                    "on-surface-variant": "#43474f",
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#41a5a4",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#adcccf",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#c4c6d1",
+                    "on-error": "#ffffff",
+                    "on-background": "#191c1d",
+                    "surface-tint": "#3a5f94",
+                    "on-secondary-container": "#4b686b",
+                    "on-primary-fixed-variant": "#1f477b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.5rem",
+                    "xl": "1rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk", "sans-serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      body { font-family: 'Manrope', sans-serif; }
+      h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; }
+      .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+      .tech-border { border-left: 4px solid #7497d0; }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 backdrop-blur-md border-b border-slate-200/50">
+<nav class="flex justify-between items-center w-full px-8 py-5 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-headline font-bold tracking-tight text-primary"><div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl text-primary">clinical_notes</span>
+<span class="tracking-tight">Onco<span class="text-on-primary-container font-light">Curator</span></span>
+</div></div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-primary font-bold text-sm tracking-wide border-b-2 border-primary pb-1" href="#">HOME</a>
+<a class="text-slate-500 font-semibold text-sm tracking-wide hover:text-primary transition-colors" href="#pipeline">PIPELINE</a>
+<a class="text-slate-500 font-semibold text-sm tracking-wide hover:text-primary transition-colors" href="#science">SCIENCE</a>
+<a class="text-slate-500 font-semibold text-sm tracking-wide hover:text-primary transition-colors" href="#investors">INVESTORS</a>
+<a class="text-slate-500 font-semibold text-sm tracking-wide hover:text-primary transition-colors" href="#about">ABOUT</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary">search</button>
+<button class="bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm uppercase tracking-wider hover:opacity-90 transition-all">Connect</button>
+</div>
+</nav>
+</header>
+<section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-primary text-center">
+<div class="absolute inset-0 opacity-40">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGBB_8Y3dZ4TId5GDapdeWNnMc8Y-jmKemjCtUOuclOiWAck57khAvrVM1Yz3hlHHj-_c6qEJsr0ltRljBKoMeaoIkUqoo1_H0bluCJt01u2EPDUU4vQk0swtGDTtinWiQKSgnQFRBFx2APJGM0hCZKrdgiF2hBvhmFokJ2THfi-CFyOd-FsGQBF3tUyFxfP5kppI5n4W3Izf2rRT2n8XuMDIfLafhQz0OYr993aUtL3kgUbC3jnohM4q3RL4Hc5FtLea20hvNWxY"/>
+<div class="absolute inset-0 bg-gradient-to-b from-primary via-primary/70 to-primary"></div>
+</div>
+<div class="relative z-10 max-w-5xl mx-auto px-8 py-20 flex flex-col items-center">
+<div class="inline-block px-4 py-1 rounded-full bg-on-primary-container/10 border border-on-primary-container/20 text-on-primary-container text-xs font-bold tracking-[0.2em] uppercase mb-8">
+            The Next Era of Precision Oncology
+        </div>
+<h1 class="text-6xl md:text-8xl text-white font-headline leading-[1.1] tracking-tight mb-8 max-w-4xl uppercase">
+            Advancing the Next <span class="text-on-primary-container">Era</span> of Precision
+        </h1>
+<p class="text-xl text-blue-100/70 max-w-2xl mb-12 font-body leading-relaxed">
+            OncoCurator leverages proprietary protein-mapping platforms to identify and target elusive cancer vulnerabilities, turning clinical complexity into targeted solutions.
+        </p>
+<div class="flex flex-wrap justify-center gap-6">
+<button class="bg-white text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-all uppercase tracking-tight shadow-xl">
+                Our Science
+            </button>
+<button class="border-2 border-white/30 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-all uppercase tracking-tight">
+                Investors
+            </button>
+</div>
+</div>
+</section>
+<section class="py-32 bg-surface border-y border-outline-variant/10" id="about">
+<div class="max-w-screen-xl mx-auto px-8 text-center">
+<div class="max-w-3xl mx-auto mb-20">
+<h2 class="text-5xl font-headline text-primary uppercase tracking-tight mb-8">Defining the Next Era of Precision</h2>
+<p class="text-on-surface-variant text-xl leading-relaxed">
+                At OncoCurator, we believe the cure for cancer lies within the data we haven't yet decoded. Our approach combines high-resolution proteomics with clinical-stage agility.
+            </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center text-left">
+<div class="relative">
+<div class="aspect-video rounded-xl overflow-hidden shadow-2xl">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSLmw8ZEFPv5ic-DK78xHE0BckjT86X8hTzFzLpjl81cH1PxjhzQYX4qncYapaD1CnB78eByMn0FLvo0FmoHMLJwZAPEUq-8fgekRkWYk9X0jz9oqdOFUn0feO7WJwM21WSO5qbZywRmpSE0_JP7gNo5xnvX3tMLHzgBI3BPLVeaNzqNL6Wlb7A4D1R9k6EczK1P-NX09-0rbClsdNFkRfnDme6Oa28INuxGhjF4RFhcrRTMnDFIUFnXNVUMolnp8p1rpHGZsT9xI"/>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-primary-container p-8 rounded-xl text-white max-w-xs shadow-2xl border border-white/10">
+<h4 class="text-xl font-headline mb-2 uppercase">Precision-First Engine</h4>
+<p class="text-blue-100/70 text-sm font-body leading-relaxed">Small-molecule inhibitors targeting the previously inaccessible genome.</p>
+</div>
+</div>
+<div class="space-y-12">
+<div class="grid grid-cols-2 gap-12">
+<div class="border-l-4 border-primary pl-6">
+<p class="text-5xl font-headline text-primary mb-2">12+</p>
+<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Patented Targets</p>
+</div>
+<div class="border-l-4 border-primary pl-6">
+<p class="text-5xl font-headline text-primary mb-2">3</p>
+<p class="text-xs text-on-surface-variant font-bold uppercase tracking-widest">Clinical Stages</p>
+</div>
+</div>
+<p class="text-on-surface-variant text-lg">
+                    We are building a predictive engine that anticipates resistance mechanisms before they emerge, ensuring that our treatments remain effective for the long term.
+                </p>
+<button class="text-primary font-bold flex items-center group">
+                    LEARN MORE ABOUT OUR MISSION
+                    <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-surface-container-low" id="pipeline">
+<div class="max-w-4xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-5xl font-headline text-primary uppercase mb-4">Development Pipeline</h2>
+<p class="text-on-surface-variant text-lg">A portfolio focused on high-unmet-need malignancies.</p>
+</div>
+<div class="space-y-6">
+<div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/30 transition-all group">
+<div class="flex flex-col md:flex-row justify-between mb-8 gap-4">
+<div>
+<h3 class="text-2xl font-headline text-primary uppercase">OC-101 (BTK Inhibitor)</h3>
+<p class="text-on-surface-variant">Relapsed B-cell Lymphoma</p>
+</div>
+<div class="text-right">
+<span class="text-xs font-bold bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full uppercase">Phase 2 Ongoing</span>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-2 text-[10px] font-bold uppercase tracking-tighter text-outline mb-2">
+<div>Discovery</div>
+<div>Pre-clinical</div>
+<div>Phase 1</div>
+<div>Phase 2</div>
+</div>
+<div class="relative h-3 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
+<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
+<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
+<div class="h-full bg-primary-container/30 w-[15%]"></div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/30 transition-all">
+<div class="flex flex-col md:flex-row justify-between mb-8 gap-4">
+<div>
+<h3 class="text-2xl font-headline text-primary uppercase">OC-204 (KRAS G12C)</h3>
+<p class="text-on-surface-variant">Non-Small Cell Lung Cancer</p>
+</div>
+<div class="text-right">
+<span class="text-xs font-bold bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full uppercase">Phase 1</span>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-2 text-[10px] font-bold uppercase tracking-tighter text-outline mb-2">
+<div>Discovery</div>
+<div>Pre-clinical</div>
+<div>Phase 1</div>
+<div>Phase 2</div>
+</div>
+<div class="relative h-3 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
+<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
+<div class="h-full bg-primary-container/30 w-[20%]"></div>
+<div class="h-full w-1/4"></div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-sm border border-outline-variant/20 hover:border-primary/30 transition-all">
+<div class="flex flex-col md:flex-row justify-between mb-8 gap-4">
+<div>
+<h3 class="text-2xl font-headline text-primary uppercase">OC-507 (Next-Gen ADC)</h3>
+<p class="text-on-surface-variant">HER2+ Metastatic Breast Cancer</p>
+</div>
+<div class="text-right">
+<span class="text-xs font-bold bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full uppercase">Phase 2</span>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-2 text-[10px] font-bold uppercase tracking-tighter text-outline mb-2">
+<div>Discovery</div>
+<div>Pre-clinical</div>
+<div>Phase 1</div>
+<div>Phase 2</div>
+</div>
+<div class="relative h-3 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
+<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
+<div class="h-full bg-primary-container w-1/4 border-r border-white/20"></div>
+<div class="h-full bg-primary-container w-1/4"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-primary text-white text-center" id="science">
+<div class="max-w-screen-xl mx-auto px-8">
+<div class="max-w-3xl mx-auto mb-20">
+<h2 class="text-5xl font-headline uppercase mb-6">The Precision Engine</h2>
+<p class="text-blue-100/70 text-lg">ProteoSolve™: Our AI-driven platform for identifying undruggable targets.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-on-primary-container to-tertiary-fixed rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+<div class="relative bg-black rounded-2xl p-4 overflow-hidden shadow-2xl">
+<img alt="" class="w-full h-auto rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD760xYRYSefCD0P91TvWKOQn9HoKTpa4wLIu1PX31um9PQmrzaHncmdhDltLXTbfS4DwA1MWiP-fsaU0toV9tgKtSES_skCTThASRE47XOndfqKhf-ZgHLaznRnAOgbtLe4ayPhJBpx1rBiMnSukzWv4CrdVIyxlvofGI-hi5XV4i_hQ_mK2RVEx210JfKGO67o2ozzvD2mJm2HvKfPGDXLCKlWDxmwofpGyoHau3Ds-N6s8CPxxRTNEiRBmLrkCwRZ6n43_2S-Qw"/>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 text-left space-y-8">
+<div class="flex gap-6 items-start">
+<div class="bg-white/5 border border-white/10 w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-container">biotech</span>
+</div>
+<div>
+<h4 class="text-xl font-headline uppercase mb-2">Molecular Simulation</h4>
+<p class="text-blue-100/60 text-sm">Binding affinity modeling with 98% accuracy.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="bg-white/5 border border-white/10 w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-container">speed</span>
+</div>
+<div>
+<h4 class="text-xl font-headline uppercase mb-2">Accelerated R&amp;D</h4>
+<p class="text-blue-100/60 text-sm">Optimization cycles reduced from years to months.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-surface" id="investors">
+<div class="max-w-screen-xl mx-auto px-8 text-center">
+<div class="max-w-3xl mx-auto mb-20">
+<h2 class="text-5xl font-headline text-primary uppercase mb-4">Investment Pillars</h2>
+<p class="text-on-surface-variant text-lg">Value creation through scientific excellence.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-10 bg-white rounded-2xl border border-outline-variant/30 hover:shadow-2xl transition-all text-left group">
+<div class="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">verified_user</span>
+</div>
+<h4 class="text-2xl font-headline text-primary uppercase mb-4">IP Portfolio</h4>
+<p class="text-on-surface-variant leading-relaxed">40+ worldwide patents protecting our novel drug delivery systems.</p>
+</div>
+<div class="p-10 bg-white rounded-2xl border border-outline-variant/30 hover:shadow-2xl transition-all text-left group">
+<div class="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">analytics</span>
+</div>
+<h4 class="text-2xl font-headline text-primary uppercase mb-4">Phase 2 Growth</h4>
+<p class="text-on-surface-variant leading-relaxed">Lead OC-101 program results anticipated for Q3 2025 catalyst.</p>
+</div>
+<div class="p-10 bg-white rounded-2xl border border-outline-variant/30 hover:shadow-2xl transition-all text-left group">
+<div class="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mb-8 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">account_balance</span>
+</div>
+<h4 class="text-2xl font-headline text-primary uppercase mb-4">Capital Runway</h4>
+<p class="text-on-surface-variant leading-relaxed">Funded through 2026 with an R&amp;D-first capital allocation model.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-slate-50">
+<div class="max-w-screen-xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-6">
+<h2 class="text-5xl font-headline text-primary uppercase">Precision Insights</h2>
+<button class="text-primary font-bold border-b-2 border-primary pb-1 uppercase tracking-wider text-sm">View All Resources</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<article class="bg-white rounded-xl overflow-hidden border border-outline-variant/10 group flex flex-col">
+<div class="h-40 overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEao_IVQmMsUVrP-4Tqbxx2ClMxcTjXLKG6lqDj5FUHuRPoJQEMg7TlK1ythnX6H9jTAU5v-sK8N6myq9E7Aqk-A1z0E1KDCRZmTVSXBzlFRPgkEhIu-Nu7y4txolkagWcwxhwA3TI3ayQyEK-kyNN1w5ZMG1KhBoGQhwYX8XLFuRkH1Zf25QjFcsFRHbvZ2tJTCdFFbeVqk3-YiRvusqXrSVS1j1y7K23LKbKcWRJgTp7uBjF_5nEJLJHGUrTwhJkcw1COtkDxSY"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-[10px] font-bold text-on-primary-container tracking-widest uppercase mb-4">Press Release</span>
+<h4 class="text-lg font-headline text-primary leading-tight mb-4 uppercase">FDA Fast Track for OC-101</h4>
+<time class="mt-auto text-xs text-outline">Oct 14, 2024</time>
+</div>
+</article>
+<article class="bg-white rounded-xl overflow-hidden border border-outline-variant/10 group flex flex-col">
+<div class="h-40 overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlDof_Ic4aJ_Pc_5Dfzf7NBA6bQF-QOy7RrngZHbdcc4nPPDEKnhoHqSyLeswduVRfvboMv1aupMHCSjHqOImbeqk8e0IN4wA-TNZX12oUQIsEXevQOLt5vv0i3YOhdTre0cA_5u_w_jv5WvWIrLlIxzTy5RufX3L1eJKXwj3R3E1_Fsl_c4omjfzWGrJuqApL7OZsFrbgmGSnzPbJ0mB4QA5FCSwEFRxEUVpeKGpoxO5cwBYTKmAnNhuHL57hkAIuAahXkAQYSWc"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-[10px] font-bold text-on-primary-container tracking-widest uppercase mb-4">Publication</span>
+<h4 class="text-lg font-headline text-primary leading-tight mb-4 uppercase">The Inaccessible Genome</h4>
+<time class="mt-auto text-xs text-outline">Sep 28, 2024</time>
+</div>
+</article>
+<article class="bg-white rounded-xl overflow-hidden border border-outline-variant/10 group flex flex-col">
+<div class="h-40 overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8xnhTBDrbgcSVygU6Y7cZXYhfvAMQu0iqr536MjYaRKj-EMQOJuXQ0nHEcQfTPZjRzmV-X51-RUGMNTVeU6sv_0LuaPOz1atDhtFZ-LVUg3VQZ87nSvT6dtlOjAFrR12buHhvIpk2M7GYEcqcMVgf8fp62En_p6ooTTop7DsNHpV0M0v1fE-ZgK2378ZLzolHw5XCf0LsASI6P43JWt3H-qpExiUbNiRhOZaSP5CgrJw5U4UV7vWDQwAopBdKlE1CI0geVWyFMxk"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-[10px] font-bold text-on-primary-container tracking-widest uppercase mb-4">Financials</span>
+<h4 class="text-lg font-headline text-primary leading-tight mb-4 uppercase">Q3 Clinical Pipeline Update</h4>
+<time class="mt-auto text-xs text-outline">Sep 12, 2024</time>
+</div>
+</article>
+<article class="bg-white rounded-xl overflow-hidden border border-outline-variant/10 group flex flex-col">
+<div class="h-40 overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSRnIpG_0mZwrwGWSeU8HQarQQ1pJAjQ6JNa6TXjTkYTlzTN4qCVcxPoFjIuVyt_FDh8Ai2WM7LOLfIducB6IdIyffa4bxlLNwpfEibZiePshLi_2j4FNKrv-W7xQW9nQtEmMUiYXe98rFSVyPJlIZYIBL8WTtt7PalaFBfaaGPNTFTN5hI6-FgBHZzojY3Ht1vZYLrFKWxOhyB1E0GJOuy3Q2DkPEVJoDVJmcBLqME8sPRgz8khLRdxhkY-iZZbLBpNXFwjFI8R0"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-[10px] font-bold text-on-primary-container tracking-widest uppercase mb-4">Event</span>
+<h4 class="text-lg font-headline text-primary leading-tight mb-4 uppercase">ASCO Presentation OC-507</h4>
+<time class="mt-auto text-xs text-outline">Aug 30, 2024</time>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="bg-primary text-white py-32 text-center">
+<div class="max-w-4xl mx-auto px-8">
+<h2 class="text-5xl md:text-6xl font-headline uppercase mb-10 leading-tight">Partner in the Next Era of Oncology</h2>
+<div class="flex flex-wrap justify-center gap-6">
+<button class="bg-on-primary-container text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-opacity-90 transition-all uppercase tracking-wider">Contact Our Team</button>
+<button class="border border-white/20 px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/5 transition-all uppercase tracking-wider">Investor Deck</button>
+</div>
+</div>
+</section>
+<footer class="bg-slate-900 text-white w-full py-20 px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-xl mx-auto border-b border-white/10 pb-20">
+<div>
+<div class="font-headline text-2xl font-bold mb-6"><div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl text-on-primary-container">clinical_notes</span>
+<span class="tracking-tight">Onco<span class="text-on-primary-container font-light">Curator</span></span>
+</div></div>
+<p class="text-slate-400 text-sm leading-relaxed">Advancing precision oncology through deep molecular insights and clinical agility. Headquartered in Cambridge, MA.</p>
+</div>
+<div>
+<h5 class="font-headline text-sm uppercase tracking-widest mb-8">Platform</h5>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-white" href="#">Pipeline Overview</a></li>
+<li><a class="hover:text-white" href="#">ProteoSolve™ Engine</a></li>
+<li><a class="hover:text-white" href="#">Research Ethics</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline text-sm uppercase tracking-widest mb-8">Resources</h5>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-white" href="#">SEC Filings</a></li>
+<li><a class="hover:text-white" href="#">Clinical Trials</a></li>
+<li><a class="hover:text-white" href="#">Press Center</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline text-sm uppercase tracking-widest mb-8">Contact</h5>
+<p class="text-slate-400 text-sm mb-4">Cambridge Tech Park<br/>Cambridge, MA 02142</p>
+<a class="text-on-primary-container font-bold" href="mailto:info@oncocurator.com">info@oncocurator.com</a>
+</div>
+</div>
+<div class="max-w-screen-xl mx-auto pt-10 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+<p>© 2024 OncoCurator Oncology. Engineered for Precision.</p>
+<div class="flex gap-8">
+<a class="hover:text-white" href="#">LinkedIn</a>
+<a class="hover:text-white" href="#">Twitter</a>
+<a class="hover:text-white" href="#">Privacy</a>
+</div>
+</div>
+</footer>
+</body></html>
